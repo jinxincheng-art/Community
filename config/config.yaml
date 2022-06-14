@@ -1,0 +1,21 @@
+mode: "dev"
+# 端口
+port: ":8085"
+
+# 日志配置
+log:
+  level: "debug"
+  filename: "./community.log"
+  max_size: 1000
+  max_age: 3600
+  max_backups: 5
+
+# 数据库配置
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: 123456
+  db: community
+  max_open_conns: 100
+  max_idle_conns: 12
